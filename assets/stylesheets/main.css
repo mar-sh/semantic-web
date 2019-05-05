@@ -1,0 +1,226 @@
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+}
+
+html {
+  height: 100%;
+  padding: auto;
+}
+
+body {
+  font-family: Roboto;
+  min-height: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.section {
+  display: flex;
+}
+
+/* Try Viewport */ 
+
+@media screen and (max-width:500) {
+
+} 
+
+/* Banner */
+.section-banner {
+  flex-flow: column wrap;
+  height: auto;
+
+}
+
+#banner-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 2%;
+}
+
+#banner-header a {
+  margin: 0.2%;
+  padding: 0.1%;
+  color: white;
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  letter-spacing: 0.2rem;
+}
+
+#banner-hero {
+  background: url("../images/js.jpg") 0 0 no-repeat / cover;
+  padding-bottom: 56.25%; /* height/width x 100% so when it resizes the padding always follow the img */
+  height: 0;
+  text-align: center;
+  filter: grayscale(1);
+}
+
+/* About */
+
+.section-about {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: white;
+}
+
+#about-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-avatar h3 {
+  margin: 2%;
+  width: 100%;
+  font-family: "Open Sans";
+  letter-spacing: 0.125rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  
+}
+
+#about-avatar img{
+  margin: 1%;
+  width: 8%;
+  height: 8%;
+  border: 1px solid grey;
+  border-radius: 60%;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  
+}
+
+#about-text-box {
+  width: 50%;
+  padding: 1%;
+}
+
+#about-text-box p {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: 1/16rem;
+  margin-bottom: 3%;
+}
+
+#about-text-box span {
+  margin-left: 10%;
+}
+
+/* Main */
+.section-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: lightgray;
+}
+
+#main {
+  margin: 2%;
+}
+
+#main > h3 {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  font-family: "Open Sans";
+  letter-spacing: 0.125rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1%px;
+}
+
+#main-container div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2%;
+}
+
+#main-container a{
+  letter-spacing: 0.125rem;
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 1% 1% 1% 0;
+  margin-bottom: 1%;
+}
+
+input[type="checkbox"] {
+  margin-left: 5%;
+  transform: scale(1.4);
+}
+
+#main-container div a:visited{
+  color: black;
+}
+
+#main-container div:hover{
+  text-shadow: 5px 2px 8px rgba(26, 0, 0, 0.9);
+}
+
+#main-post-script {
+  align-self: flex-start;
+  margin-left: 2%;
+}
+
+#main-post-script p, #main-post-script a{
+  color: black;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+#main-post-script a:hover, #main-post-script a:visited {
+  color: black;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  width: 100%;
+  color: white;
+}
+
+footer div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 1%;
+  margin: 1% 0;
+}
+
+footer h3, footer h3 a, footer h3 a:hover, footer h3 a:visited {
+  align-self: center;
+  color: white;
+  letter-spacing: 0.125rem;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Open Sans";
+}
+
+footer span a, footer span a:hover,  footer span a:visited {
+  color: white;
+  text-decoration: none;
+}
